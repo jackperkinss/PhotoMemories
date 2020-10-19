@@ -18,7 +18,7 @@ def choices():
 def getdetails():
     print("Please Provide")
     email = str(input("Email: "))
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+    f = open("User_Data.txt",'r')
     info = f.read()
     if email in info:
         return "Email Unavailable. Please Try Again"
@@ -26,25 +26,21 @@ def getdetails():
     name = str(input("Name: "))
     password = str(input("Password: "))
     forget = str(input("Favorite Number: "))
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+    f = open("User_Data.txt",'r')
     info = f.read()
     if name in info:
         return "Name Unavailable. Please Try Again"
     f.close()
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'w')
+    f = open("User_Data.txt",'w')
     info = info + "\n" + email + "\n" + name + "\n" + password + "\n" + forget + "\n"
     f.write(info)
     f.close()
-    #f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
-    #string_list = f.readlines()
-    #f.close()
-    #print(string_list)
     
 def checkdetails():
     print("Please Provide")
     name = str(input("Name: "))
     password = str(input("Password: "))
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+    f = open("User_Data.txt",'r')
     info = f.read()
     info = info.split()
     if name in info:
@@ -61,7 +57,7 @@ def checkdetails():
 def forgotU():
    email = str(input("Please Provide Email: "))
    forget = str(input("What Is Your Favorite Number?: "))
-   f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+   f = open("User_Data.txt",'r')
    info = f.read()
    f.close()
    info = info.split() 
@@ -69,15 +65,15 @@ def forgotU():
    usr_num = info[index]
    if usr_num == forget and email in info:
       name = str(input("Please Enter A New Username: "))
-      f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+      f = open("User_Data.txt",'r')
       string_list = f.readlines()
       f.close
-      with open("/content/drive/Shared drives/Photo_Memory/User_Data.txt") as myFile:
+      with open("User_Data.txt") as myFile:
           for num, line in enumerate(myFile, 1):
               if email in line:
                   index1 = num
       string_list[index1] = name + "\n"
-      f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'w')
+      f = open("User_Data.txt",'w')
       new_f = "".join(string_list)
       f.write(new_f)
       f.close()
@@ -88,7 +84,7 @@ def forgotU():
 def forgotP():
    email = str(input("Please Provide Email: "))
    forget = str(input("What Is Your Favorite Number?: "))
-   f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+   f = open("User_Data.txt",'r')
    info = f.read()
    f.close()
    info = info.split() 
@@ -96,15 +92,15 @@ def forgotP():
    usr_num = info[index]
    if usr_num == forget and email in info:
      password = str(input("Please Enter A New Password: "))
-     f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+     f = open("User_Data.txt",'r')
      string_list = f.readlines()
      f.close
-     with open("/content/drive/Shared drives/Photo_Memory/User_Data.txt") as myFile:
+     with open("User_Data.txt") as myFile:
          for num, line in enumerate(myFile, 1):
              if email in line:
                  index1 = num + 1
      string_list[index1] = password + "\n"
-     f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'w')
+     f = open("User_Data.txt",'w')
      new_f = "".join(string_list)
      f.write(new_f)
      f.close()
@@ -129,15 +125,15 @@ def manage(name, password):
 
 def manageU(name1, password1):
     name = str(input("Please Enter A New Username: "))
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+    f = open("User_Data.txt",'r')
     string_list = f.readlines()
     f.close
-    with open("/content/drive/Shared drives/Photo_Memory/User_Data.txt") as myFile:
+    with open("User_Data.txt") as myFile:
         for num, line in enumerate(myFile, 1):
             if password1 in line:
                 index1 = num - 2
     string_list[index1] = name + "\n"
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'w')
+    f = open("User_Data.txt",'w')
     new_f = "".join(string_list)
     f.write(new_f)
     f.close()
@@ -145,15 +141,15 @@ def manageU(name1, password1):
 
 def manageP(name1, password1):
     password = str(input("Please Enter A New Password: "))
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+    f = open("User_Data.txt",'r')
     string_list = f.readlines()
     f.close
-    with open("/content/drive/Shared drives/Photo_Memory/User_Data.txt") as myFile:
+    with open("User_Data.txt") as myFile:
         for num, line in enumerate(myFile, 1):
             if name1 in line:
                 index1 = num
     string_list[index1] = password + "\n"
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'w')
+    f = open("User_Data.txt",'w')
     new_f = "".join(string_list)
     f.write(new_f)
     f.close()
@@ -161,15 +157,15 @@ def manageP(name1, password1):
 
 def manageE(name1, password1):
     email = str(input("Please Enter A New Email: "))
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'r')
+    f = open("User_Data.txt",'r')
     string_list = f.readlines()
     f.close
-    with open("/content/drive/Shared drives/Photo_Memory/User_Data.txt") as myFile:
+    with open("User_Data.txt") as myFile:
         for num, line in enumerate(myFile, 1):
             if name1 in line:
                 index1 = num - 2
     string_list[index1] = email + "\n"
-    f = open("/content/drive/Shared drives/Photo_Memory/User_Data.txt",'w')
+    f = open("User_Data.txt",'w')
     new_f = "".join(string_list)
     f.write(new_f)
     f.close()
