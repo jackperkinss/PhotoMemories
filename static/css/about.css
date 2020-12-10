@@ -1,0 +1,83 @@
+.logo {
+    font-family: "Copperplate", fantasy;
+    color: white;
+    text-align: center;
+}
+.welcome {
+    font-family: "Copperplate", fantasy;
+    color: white;
+}
+.menu {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border: grey;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+.horizontal {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.main {
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: Century Gothic;
+    background-color: rgba(3, 85, 238, 0.582);
+}
+.container{
+    height: 75vh;
+    width: 30%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+}
+
+.container h1{
+    color: white;
+    margin-top: 10px;
+
+}
+
+.container p{
+    color: white;
+    margin-top: 60px;
+    font-size: large;
+}
+
+.btn{
+    background: no-repeat;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    width: 50%;
+    padding: 7px 15px;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 50px;
+
+}
+
+.btn:hover{
+    background: white;
+    color: black;
+}

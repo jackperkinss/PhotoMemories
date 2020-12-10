@@ -1,0 +1,62 @@
+.logo {
+    font-family: "Copperplate", fantasy;
+    color: white;
+    text-align: center;
+}
+
+.welcome {
+    font-family: "Copperplate", fantasy;
+    color: white;
+    text-align: center;
+}
+
+.main {
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main2 {
+    
+    align-items: center;
+    text-align: center;
+}
+
+.horizontal {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border: grey;
+    background-color: orange;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(3, 85, 238, 0.582);
+}
+
+.submission-form{
+    align-items:center;
+    max-width:500px;
+    margin:2rem auto;
+    border:2px solid #E74C3C;
+    padding:2rem;
+    
+}
+
+
+

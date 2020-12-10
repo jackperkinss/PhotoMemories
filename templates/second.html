@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}" >
+<html>
+    <head>
+        <title> Photo Memories </title>
+    </head>
+    <head>
+        <h1 class="logo">PhotoMemories</h1>
+    </head>
+                <body>
+                <h1 class= "welcome"> Welcome {username1}! </h1> 
+                <div class=horizontal>
+
+                    <br>
+                    <br>
+                    <a href=/upload/>
+                        <button class="menu"> Upload Media </button>
+
+
+                    <a href=/newU/>
+                        <button class="menu">Change Username</button>
+
+
+                    <a href=/newP/>
+                        <button class="menu">Change Password</button>
+
+
+                    <a href=/newE/>
+                        <button class="menu">Change Email</button>
+                    </a>
+
+                </div>
+                <div>
+                {% for pic in pics %}
+
+                <img src=" {{url_for('static', filename = pic )}}" height="500px", width="500px"/>
+
+                {% endfor %}
+                </div>
+
+            </body>
+        </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}" >
+<html>
+    <head>
+        <title> Photo Memories </title>
+        <h1 class="logo">PhotoMemories</h1>
+    </head>     
+            <body>
+                <div class="main">
+                    {errors}
+                    <p>Email</p>
+                    <form method="post" action=".">
+                    <p><input name="email" /></p>
+                </div>
+
+                <div class="main">
+                    <p>Lucky Number</p>
+                    <form method="post" action=".">
+                    <p><input name="forget" /></p>
+                    </div>
+                
+                <div class="main">
+                    <p>New Password</p>
+                    <form method="post" action=".">
+                    <p><input name="password" /></p>
+                </div>
+
+                <div class="main">
+                    <p><input type="submit" value="Submit" /></p>
+                    </form>
+                </div>
+            
+                <div class="main">
+                    <a href=/>
+                        <button>Back</button>
+                    </a>
+                </div>
+            </body>
+        
+        </html>

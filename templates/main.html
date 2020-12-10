@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}" >
+<html>
+    <head>
+        <title> Photo Memories </title>
+        <h1 class="logo">PhotoMemories</h1>
+    </head>     
+            <body>
+                <div class="main">
+                    {errors}
+                    <p>Username</p>
+                    <form method="post" action=".">
+                    <p><input name="username" /></p>
+                </div>
+
+                <div class="main">
+                    <p>Password</p>
+                    <form method="post" action=".">
+                        <p><input name="password" /></p>
+                        <p><input type="submit" value="Login" /></p>
+                </div>
+
+                <div class="main">
+                    </form>
+                    <a href=change_pw>
+                        Forgot Password
+                    </a>
+                </div>
+
+                <br>
+                
+                <div class="main">   
+                    </form>
+                    <a href=create>
+                        Create A Profile
+                    </a>
+                </div>
+
+                <br>
+
+                <div class="main">   
+                </form>
+                <a href=aboutus>
+                    About us
+                </a>
+            </div>
+                <br>
+                <div class="main">   
+                </form>
+                <a href=info>
+                    Contact us
+                </a>
+            </div>
+            </body>
+        </html>

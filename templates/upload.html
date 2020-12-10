@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}" >
+<html>
+    <head>
+        <title> Photo Memories </title>
+        <h1 class="logo">PhotoMemories</h1>
+    </head>     
+            <body>
+            <p>Upload Image</p>
+            <form action="/upload/" method="POST" enctype="multipart/form-data">
+                <div>
+                    <label>When was this image taken</label>
+                    <input type="date" name="date">
+
+                    <label>Caption this image</label>
+                    <input type="text" name="cap">    
+
+                    <label>Select Image</label>
+                    <input type="file" name="image" id="image">
+
+                    <label>when do you want to be notified </label>
+                    <input type = "text" name="minute">
+
+
+                    <button type = "submit">upload image</button> 
+                </div>
+            </form>
+            </body>
+        </html>
